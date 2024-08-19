@@ -6,7 +6,7 @@ const api =
 jokeButton.addEventListener("click", async () => {
   try {
     const response = await fetch(api);
-    const data = response.json();
+    const data = await  response.json();
     if (data.type === "single") {
       jokeText.textContent = data.joke;
     } else if (data.type === "twopart") {
