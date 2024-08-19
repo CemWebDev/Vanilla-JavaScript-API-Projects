@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: 0.3s ease all;
 }
 
 :root {
@@ -14,15 +15,16 @@ body {
   align-items: center;
   min-height: calc(100vh - 1px);
   font-family: "Poppins", sans-serif;
-  background-color: #f3f3f3;
-  padding: 10px;
+  background-color: #fff;
 }
 
 .container {
-  max-width: 800px;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
   background-color: #222;
   text-align: center;
-  padding: 40px 45px;
+  padding: 2.5rem 2.8125rem;
   border-radius: 18px;
 }
 
@@ -38,19 +40,24 @@ body {
 
 .container .content {
   padding: 8px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
 .container .content .joke-text {
   color: #f3f3f3;
   overflow: auto;
-  max-height: 200px;
+  background-color: red;
+  max-width: 100%;
 }
 
 .container .content .joke-button {
   margin-top: 10px;
 }
 
-.container .content .joke-button button {
+.container .content button {
   cursor: pointer;
   border: 0;
   padding: 5px 10px;
