@@ -23,14 +23,18 @@ body {
   padding: 2.5rem 2.8125rem;
   border-radius: 1.125rem;
   box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.7);
+  position: relative;
 }
 
 .container header {
-  border-bottom: 0.0625rem solid #f3f3f3;
+  position: absolute;
+  top: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .container i {
-  color: #e7eaf6;
+  color: #ff6f00;
   font-size: 2.5rem;
   margin-bottom: 0.625rem;
 }
