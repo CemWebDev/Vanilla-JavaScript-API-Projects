@@ -5,20 +5,27 @@
   transition: 0.3s ease all;
 }
 
+:root {
+  --primary-color: #113f67;
+  --secondary-color: #e7eaf6;
+  --accent-color: #ff6f00;
+  --white: #fff;
+}
+
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: calc(100vh - 0.0625rem);
   font-family: "Poppins", sans-serif;
-  background-color: #fff;
+  background-color: var(--white);
 }
 
 .container {
   max-width: 37.5rem;
   width: 100%;
   margin: 0 auto;
-  background-color: #113f67;
+  background-color: var(--primary-color);
   text-align: center;
   padding: 2.5rem 2.8125rem;
   border-radius: 1.125rem;
@@ -28,14 +35,14 @@ body {
 
 .container header {
   position: absolute;
-  top: -1rem;
+  top: -3rem;
   left: 50%;
   transform: translateX(-50%);
 }
 
 .container i {
-  color: #ff6f00;
-  font-size: 2.5rem;
+  color: var(--accent-color);
+  font-size: 4.5rem;
   margin-bottom: 0.625rem;
 }
 
@@ -48,8 +55,14 @@ body {
 }
 
 .container .content .joke-text {
-  color: #f3f3f3;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  color: var(--white);
   overflow: auto;
+  height: 150px;
+  align-items: center;
+  justify-content: center;
 }
 
 .container .content .joke-button {
@@ -61,16 +74,16 @@ body {
   border: 0;
   padding: 0.75rem 2.25rem;
   outline: 0;
-  color: #113f67;
+  color: var(--primary-color);
   font-weight: 550;
-  background-color: #e7eaf6;
+  background-color: var(--secondary-color);
   border: 1px solid transparent;
   font-size: 1rem;
   border-radius: 0.5rem;
 }
 
 .container .content button:hover {
-  border-color: #e7eaf6;
+  border-color: var(--secondary-color);
   background-color: transparent;
-  color: #e7eaf6;
+  color: var(--secondary-color);
 }
