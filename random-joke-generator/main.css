@@ -5,15 +5,11 @@
   transition: 0.3s ease all;
 }
 
-:root {
-  --icon-color: #fd0054;
-}
-
 body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: calc(100vh - .0625rem);
+  min-height: calc(100vh - 0.0625rem);
   font-family: "Poppins", sans-serif;
   background-color: #fff;
 }
@@ -22,25 +18,25 @@ body {
   max-width: 37.5rem;
   width: 100%;
   margin: 0 auto;
-  background-color: #222;
+  background-color: #113f67;
   text-align: center;
   padding: 2.5rem 2.8125rem;
   border-radius: 1.125rem;
-  box-shadow: 0 .25rem .5rem rgba(0, 0, 0, .7);
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.7);
 }
 
 .container header {
-  border-bottom: .0625rem solid #f3f3f3;
+  border-bottom: 0.0625rem solid #f3f3f3;
 }
 
-.container #face {
-  color: var(--icon-color);
+.container i {
+  color: #e7eaf6;
   font-size: 2.5rem;
-  margin-bottom: .625rem;
+  margin-bottom: 0.625rem;
 }
 
 .container .content {
-  padding: .5rem .625rem;
+  padding: 0.5rem 0.625rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -53,20 +49,24 @@ body {
 }
 
 .container .content .joke-button {
-  margin-top: .625rem;
+  margin-top: 0.625rem;
 }
 
 .container .content button {
   cursor: pointer;
   border: 0;
+  padding: 0.75rem 2.25rem;
   outline: 0;
-  background-color: var(--icon-color);
-  color: #f3f3f3;
+  color: #113f67;
+  font-weight: 550;
+  background-color: #e7eaf6;
+  border: 1px solid transparent;
   font-size: 1rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
-.container .content .joke-button button:hover {
-  color: var(--icon-color);
-  background-color: #555;
+.container .content button:hover {
+  border-color: #e7eaf6;
+  background-color: transparent;
+  color: #e7eaf6;
 }
