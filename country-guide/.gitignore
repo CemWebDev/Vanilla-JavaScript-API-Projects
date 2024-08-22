@@ -1,9 +1,0 @@
-.sass-cache/
-*.sass-cache
-*.scssc
-
-/dist/
-
-/dist/*
-
-*.log
