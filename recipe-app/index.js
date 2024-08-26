@@ -1,18 +1,23 @@
 const searchInput = document.getElementById("search-input");
-const searchBTn = document.getElementById("search-btn");
+const searchBtn = document.getElementById("search-btn");
 const API_URL = "https://www.themealdb.com/api/json/v1/1/search.php?s=";
-
-searchBTn.addEventListener("click", searchForMeal);
-searchInput.addEventListener("keydown", (e) => {
-  if (e.keyCode === 13) {
-    e.preventDefault();
-    searchForMeal();
-  }
-});
 
 const searchForMeal = () => {
   console.log("hello");
 };
+
+const cleanInput = () => {
+  searchInput.value = "";
+};
+
+searchBtn.addEventListener("click", searchForMeal);
+searchInput.addEventListener("keydown", (e) => {
+  if (e.keyCode === 13) {
+    e.preventDefault();
+    cleanInput();
+    searchForMeal();
+  }
+});
 
 const fetchData = async () => {
   try {
